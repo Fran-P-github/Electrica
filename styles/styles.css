@@ -63,8 +63,8 @@ body{
 #intro-title h1{
     z-index: 3;
     font-family: 'Raleway', sans-serif;
-    color: var(--color4);
-    font-size: 5vw;
+    color: var(--color5);
+    font-size: calc(3vw + 2vh);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -134,7 +134,7 @@ nav{
     width:100%;
     position: relative;
     text-align: center;
-    font-size:30px;
+    font-size: calc(1.5vw + 1.5vh);
     transition: .3s all;
     vertical-align: center;
     letter-spacing: 3px;
@@ -167,7 +167,7 @@ nav{
 }
 
 .nav-bar a{
-    color:var(--color3);
+    color: var(--color3);
     text-decoration: none;
 }
 
@@ -179,34 +179,96 @@ nav{
     transform: translateX(0%);
 }
 
-/* Contact */
+/* Container */
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
 
 #contact{
-    background-color: var(--color-transparent);
+    background-color: var(--color3);
     width: 35vw;
     height: calc(30vh - 20px);
     position: relative;
-    margin-left: 25%;
-    transform: translateX(-50%);
     margin-top: 10px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #contact h1{
     position: relative;
-    display: flex;
-    justify-content: center;
     font-family: 'Raleway', sans-serif;
     user-select: none;
     color: var(--color0);
+    font-size: calc(2vw + 1.5vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    transition: all .3s;
 }
 
 #contact div{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #contact div h4{
-    padding: 10px;
+    padding-left: 10px;
+    font-size: calc(1vw + 1vh);
+    font-family: poppins;
+    color: var(--color0);
+}
+
+#email-contact{
+    height: 45%;
+}
+
+#contact h1::after{
+    position: absolute;
+    top: 4vh;
+    content: '';
+    height: 3px;
+    width: 15vw;
+    background: var(--color0);
+    transform: scale(0);
+    transition: transform .3s;
+}
+
+#contact:hover h1::after{
+    transform: scale(1);
+}
+
+#start{
+    width: 35vw;
+    height: calc(30vh - 20px);
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color3);
+    background: linear-gradient(to left, var(--color3) 50%, var(--color4) 50%) right;
+    background-size: 200%;
+    font-size: calc(2vw + 2vh);
+    font-family: 'Raleway', sans-serif;
+    color: var(--color5);
+    transition: background-position .5s ease-in, color .3s ease-in;
+}
+
+#container a{
+    text-decoration: none;
+}
+
+#start:hover{
+    background-position: left;
+    color: var(--color0);
 }
