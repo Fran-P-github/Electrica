@@ -222,7 +222,7 @@ nav{
 }
 
 #contact div h4{
-    padding-left: 10px;
+    padding-left: 1vw;
     font-size: calc(1vw + 1vh);
     font-family: poppins;
     color: var(--color0);
@@ -260,6 +260,7 @@ nav{
     background-size: 200%;
     font-size: calc(2vw + 2vh);
     font-family: 'Raleway', sans-serif;
+    text-align: center;
     color: var(--color5);
     transition: background-position .5s ease-in, color .3s ease-in;
 }
