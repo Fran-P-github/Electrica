@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d5fae4f35.js" crossorigin="anonymous"></script>
     <title>Electrica</title>
 </head>
 
 <body>
-    <!--nav bar-->
+    <!-- Nav bar -->
 
     <div class="burger">
         <div id="line1"></div>
@@ -22,20 +23,37 @@
     <nav>
         <ul class="nav-bar">
             <a href="index.html"><li id="home-button">Inicio</li></a>
-            <a href="faq.html"><li id="faq-button">FAQ</li></a>
-            <a href="team.html"><li id="team-button">Equipo</li></a>
-            <a href="about.html"><li id="about-button">Informacion</li></a>
+            <a href="pages/faq.html"><li id="faq-button">FAQ</li></a>
+            <a href="pages/team.html"><li id="team-button">Equipo</li></a>
+            <a href="pages/about.html"><li id="about-button">Informacion</li></a>
         </ul>
     </nav>
 
+    <!-- Intro -->
+
     <div id="intro-img">
-        <img src="electrica.jpeg" />
+        <img src="assets/electrica.jpeg" />
     </div>
 
     <div id="intro-title">
         <h1>Reparos de Electrica</h1>
     </div>
 
-    <script src="app.js"></script>
+    <!-- Contacto -->
+    <div id="contact">
+        <h1>Contacto</h1>
+        
+        <div id="email-contact">
+            <i id="email-icon" class="fa-regular fa-envelope"></i>
+            <h4>email@example.com</h4>
+        </div>
+
+        <div id="whatsapp-contact">
+            <i id="whatsapp-icon" class="fa-brands fa-whatsapp"></i>
+            <h4>+54 911 6969 6969</h4>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
 </body>
 </html>
