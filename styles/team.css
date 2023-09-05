@@ -5,6 +5,9 @@
     --color3: #003566;
     --color4: #ffc300;
     --color5: #ffd60a;
+    --color6: #225788;
+    --color-transparent: #003566cc;
+    --text-color: #ccc;
 }
 
 * {
@@ -115,7 +118,7 @@ nav{
 }
 
 .nav-bar a{
-    color:var(--color3);
+    color:var(--text-color);
     text-decoration: none;
 }
 
